@@ -4,7 +4,7 @@
 
 ## Breaking Change
 
-从 [#4](https://github.com/lcjnil/github-notion-star/issues/4) 版本开始，增加了 `Primary launguage` 和 `Repository Topics` 两个参数（by @imfycc），需要在原有 database 中增加这两个选项，否则同步会失败。
+从 [#4](https://github.com/lcjnil/github-notion-star/issues/4) 版本开始，增加了 `Primary Language` 和 `Repository Topics` 两个参数（by @imfycc），需要在原有 database 中增加这两个选项，否则同步会失败。
 
 ## 功能
 
@@ -29,7 +29,10 @@
 需要在 `github/workflows/*.yml` 中，修改这个配置
 
 <details><summary>如何找到 NOTION_API_KEY？</summary>
-请参考：https://www.notion.so/Add-and-manage-integrations-with-the-API-910ac902372042bc9da38d48171269cd#eeaa235ffe834d4f9a89a5893398f341
+请参考：https://www.notion.so/help/create-integrations-with-the-notion-api#create-an-internal-integration
+
+创建 internal integration 之后，需要给予这个 token 访问 database 的权限  
+请参考：https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions  
 </details>
 
 <details><summary>如何找到 NOTION DATABASE ID</summary>
